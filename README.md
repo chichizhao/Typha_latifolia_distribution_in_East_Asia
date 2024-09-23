@@ -93,7 +93,7 @@ After we get the reference genome, we next to do is the quality control of the r
     samtools mpileup -C50 -uf typha.fa ${i}_markdup.bam | bcftools call -c | vcfutils.pl vcf2fq -d 10 -D 200 | gzip > ${i}.fq.gz
     fq2psmcfa -q20 ${i}.fq.gz > ${i}.psmcfa
     psmc -N25 -t15 -r5 -p '4+25*2+4+6' -o ${i}.psmc ${i}.psmcfa
-    python script/plot_psmc.py -namelist popmap.txt -psmcdir psmc_data -o psmc_result.svg
+    python script/Step_08_plot_psmc.py -namelist popmap.txt -psmcdir psmc_data -o psmc_result.svg
 
 ## Step09: inference the demography with momi2
     momi2: https://github.com/popgenmethods/momi2
