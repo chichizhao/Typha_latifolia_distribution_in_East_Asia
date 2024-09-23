@@ -98,7 +98,7 @@ After we get the reference genome, we next to do is the quality control of the r
 ## Step09: inference the demography with momi2
     momi2: https://github.com/popgenmethods/momi2
 #### here we prepare the python scrip for infering the history population size with momi2
-    python script/momi_infer.py
+    python script/step_09_momi_infer.py
 #### and we check the log, to pick up the reasonable simulation result for the demographic history inference and we plot the resultw with python script
     python script/plot_momi.py
 
