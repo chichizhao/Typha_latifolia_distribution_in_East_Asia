@@ -86,7 +86,7 @@ After we get the reference genome, we next to do is the quality control of the r
 #### here we use the CLUMPAK pipeline to basicly visualize the admixture results, and than use pytho script to plot the result
     python plot_admixture.py
 
-## Step08: interface the history population size with PSMC
+## Step08: inference population effectiv size *Ne* with PSMC
     PSMC: https://github.com/lh3/psmc
     for i in $(cat list)
     do
@@ -95,14 +95,14 @@ After we get the reference genome, we next to do is the quality control of the r
     psmc -N25 -t15 -r5 -p '4+25*2+4+6' -o ${i}.psmc ${i}.psmcfa
     python script/plot_psmc.py -namelist popmap.txt -psmcdir psmc_data -o psmc_result.svg
 
-## Step09: interface the history population size with momi2
+## Step09: inference the demography with momi2
     momi2: https://github.com/popgenmethods/momi2
 #### here we prepare the python scrip for infering the history population size with momi2
     python script/momi_infer.py
 #### and we check the log, to pick up the reasonable simulation result for the demographic history inference and we plot the resultw with python script
     python script/plot_momi.py
 
-## Step10: build the whole chloroplast genome and the phylogenetic tree
+## Step10: build the whole chloroplast genome and phylogenetic tree
     GetOrganelle: https://github.com/Kinggerm/GetOrganelle
     for i in `cat path_list`
     do 
