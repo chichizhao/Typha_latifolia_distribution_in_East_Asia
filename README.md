@@ -84,7 +84,7 @@ After we get the reference genome, we next to do is the quality control of the r
     admixturePipeline: https://github.com/stevemussmann/admixturePipeline
     admixturePipeline.py -m popmap.txt -v typha_raw_filter_variants.vcf.gz -k 1 -K 10 -R 8  -n 48
 #### here we use the CLUMPAK pipeline to basicly visualize the admixture results, and than use pytho script to plot the result
-    python plot_admixture.py
+    python Step_07_plot_admixture.py
 
 ## Step08: inference population effectiv size *Ne* with PSMC
     PSMC: https://github.com/lh3/psmc
