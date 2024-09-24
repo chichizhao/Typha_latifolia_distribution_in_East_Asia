@@ -5,7 +5,6 @@ Sample's number	Code	Latitude	Longitude	Sample's condition	Collection Data
 2	EC4	52.279883	123.036521	Silicone drying and storing at -20 ℃	2014
 3	EC5	50.68855	121.32355	Silicone drying and storing at -20 ℃	2013
 3	EA1	39.900183	124.13745	Silicone drying and storing at -20 ℃	2013
-2	Xu3785	41.711167	125.244267	Silicone drying and storing at -20 ℃	2013
 1	EB6	47.8274	133.688333	Silicone drying and storing at -20 ℃	2013
 2	EC1	47.70995	130.936533	Silicone drying and storing at -20 ℃	2013
 2	EB1	47.285567	128.3757	Silicone drying and storing at -20 ℃	2013
