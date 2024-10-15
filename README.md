@@ -1,7 +1,6 @@
 #  workflow for analysis of *Typha latifolia* in East Asia
 ## Step01 : get the reference genome of *Typha latifolia*
-here we get the reference from the study xxx
-and the BioProject is PRJCA016992 in the link https://ngdc.cncb.ac.cn/gsub/submit/bioproject/list
+The DNA sequence data are available in the National Genomics Data Center, BioProject no. PRJCA030399, short reads of samples are under GSA no. CRA019211, reference genome is available under GWH No. GWHCBIL00000000. https://ngdc.cncb.ac.cn/gsub/submit/bioproject/list
 
 After we get the reference genome, we next to do is the quality control of the raw data. The following is the file list in the raw data, and you also can check the data under the path data/china/china3/raw_data
     
