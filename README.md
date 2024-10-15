@@ -1,5 +1,4 @@
-#  workflow for analysis of *Typha latifolia* in China
-
+#  workflow for analysis of *Typha latifolia* in East Asia
 ## Step01 : get the reference genome of *Typha latifolia*
 here we get the reference from the study xxx
 and the BioProject is PRJCA016992 in the link https://ngdc.cncb.ac.cn/gsub/submit/bioproject/list
