@@ -178,6 +178,7 @@ After we get the reference genome, we next to do is the quality control of the r
 #### as the position point of the data analysis of 130 kya are not fit into the on the map, so here we ignore the data analysis of 130 kya
 
 ### and we plot the GWAS result with the python script
+    python Step_12_plot_GWAS.py
 
 
 ## Step13: positive selection and selective sweep analysis
@@ -189,7 +190,11 @@ After we get the reference genome, we next to do is the quality control of the r
 
 ## Step14: RONA (risk of non-adaptive) analysis
 #### here we use python script to calculate the RONA of the *Typha latifolia* in China
+#### before we calculate the rona value, we need prepare two files: the maf of the each natural sites, and the env date of each natural sites
+    python Step_14_rona.py
 
 
 ## Step15: gene offset analysis
+#### here we use the GF modle with 3 degree in geographic to calculate the genetic offset value
+    Rscript Step_15_gfoffset.r
 
