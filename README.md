@@ -175,9 +175,7 @@ After we get the reference genome, we next to do is the quality control of the r
 ## Step12: GWAS analysis
     vcf2gwas:https://github.com/frankvogt/vcf2gwas
     vcf2gwas -v typha_raw_filter_variants_snp.vcf.gz -pf env_data_current.csv -ap -lmm -T 6 -nl
-    vcf2gwas -v typha_raw_filter_variants_snp.vcf.gz -pf env_data_6kya.csv -ap -lmm -T 6 -nl
-    vcf2gwas -v typha_raw_filter_variants_snp.vcf.gz -pf env_data_21kya.csv -ap -lmm -T 6 -nl
-#### as the position point of the data analysis of 130 kya are not fit into the on the map, so here we ignore the data analysis of 130 kya
+
 
 ### and we plot the GWAS result with the python script
     python Step_12_plot_GWAS.py
