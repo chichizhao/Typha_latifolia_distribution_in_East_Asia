@@ -1,4 +1,4 @@
-#  Workflow for analysis of *Typha latifolia* in East Asia
+#  Workflow for analysis of rear-edge *Typha latifolia* population in East Asia
 ## Step01 : get the reference genome of *Typha latifolia*
 The DNA sequence data are available in the National Genomics Data Center, BioProject no. PRJCA030399, short reads of samples are under GSA no. CRA019211, reference genome is available under GWH No. GWHCBIL00000000. https://ngdc.cncb.ac.cn/gsub/submit/bioproject/list
 
