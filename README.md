@@ -152,7 +152,7 @@ After we get the reference genome, we next to do is the quality control of the r
 
 ###########################################################################
 
-## Step11: sites' niche analysis
+## Step11: niche analysis
     Maxent: https://biodiversityinformatics.amnh.org/open_source/maxent/
     wordclim bio data: http://www.worldclim.com/past; https://www.worldclim.com/paleo-climate1;
     Last inter-glacial (LIG; ~120,000 - 140,000 years BP) : http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/grid/pst/lig/lig_30s_bio.zip
