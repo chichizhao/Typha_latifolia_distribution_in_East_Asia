@@ -186,6 +186,7 @@ After we get the reference genome, we next to do is the quality control of the r
     RAiSD -n typha -I typha_raw_filter_variants_snp.vcf.gz -O typha -R
 
 ### here we got the positive selection and selective sweep analysis result, and we plot the result with the python script
+    python Step_13_plot_positive_selection.py
 
 
 ## Step14: RONA (risk of non-adaptive) analysis
