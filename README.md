@@ -161,9 +161,11 @@ After we get the reference genome, we next to do is the quality control of the r
     Current climate: https://biogeo.ucdavis.edu/data/worldclim/v2.1/base/wc2.1_2.5m_bio.zip
     Future climate (2080-2100 ssp585): https://geodata.ucdavis.edu/cmip6/2.5m/MIROC6/ssp585/wc2.1_2.5m_bioc_MIROC6_ssp585_2081-2100.tif
 
-### extract the environmental data of the sites and count the distribution and the principal component analysis of sites' environmental data
-    python script/plot_pca_climate.py
-    python script/plot_niche.py
+### extract the environmental data of the sites
+### count the distribution and the principal component analysis of sites' environmental data
+### redundancy analysis of the genetic with bio-climate data
+    python Step_11_plot_pca_climate.py
+    python Step_11_RDA.r
 
 ### and the niche model of the *Typha latifolia* in China are build with 19 bioclimatic variables of above date and the Maxent software in GeoScence pro 
 
