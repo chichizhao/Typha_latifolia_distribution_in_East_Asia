@@ -86,7 +86,7 @@ After we get the reference genome, we next to do is the quality control of the r
 #### here we use the CLUMPAK pipeline to basicly visualize the admixture results, and than use pytho script to plot the result
     python Step_07_plot_admixture.py
 
-## Step08: inference population effectiv size *Ne* with PSMC
+## Step08: inference population effective size *Ne* with PSMC
     PSMC: https://github.com/lh3/psmc
     for i in $(cat list)
     do
