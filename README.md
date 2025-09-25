@@ -63,7 +63,7 @@ After we get the reference genome, we next to do is the quality control of the r
     java -Djava.io.tmpdir=/tmp -Xmx128g -jar path/gatk-package-4.2.4.1-local.jar VariantsToTable -R typha.fa -V typha_raw.vcf.gz -O typha_raw_variants.csv -F CHROM -F POS -F DP -F AF -F QUAL -F QD -F MQ -F FS -F SOR -F MQRankSum -F ReadPosRankSum
     java -Djava.io.tmpdir=/tmp -Xmx128g -jar path/gatk-package-4.2.4.1-local.jar VariantFiltration -R typha.fa -V typha_raw.vcf.gz -O typha_raw_recode.vcf.gz --filter-expression "DP < 30||DP>8000 || QD < 15.0 || MQ < 58.0 || FS > 2.0 || SOR > 3.0 || MQRankSum < -12.5 || ReadPosRankSum < -4.0" --filter-name "my_snp_filter"
     java -Djava.io.tmpdir=/tmp -Xmx128g -jar path/gatk-package-4.2.4.1-local.jar SelectVariants -R typha.fa -V typha_raw_recode.vcf.gz  -O typha_raw_filter_variants.vcf.gz --exclude-filtered true
-    vcftools --vcf typha_raw_filter_variants.vcf.gz --maf 0.1 --max-maf 0.9 --recode --out filtered_maf
+    vcftools --gzvcf typha_raw_filter_variants.vcf.gz --maf 0.1 --max-maf 0.9 --recode --out filtered_maf
     vcftools --vcf filtered_maf.recode.vcf --max-missing 0.9 --recode --out final_filtered
     java -Djava.io.tmpdir=/tmp -Xmx128g -jar path/gatk-package-4.2.4.1-local.jar SelectVariants -R typha.fa -V typha_raw_filter_variants.vcf.gz --select-type-to-include SNP -O typha_raw_filter_variants_snp.vcf.gz
 
